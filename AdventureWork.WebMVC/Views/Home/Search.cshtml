@@ -1,0 +1,66 @@
+﻿@model IEnumerable<AdventureWork.WebMVC.ViewModel.HomePageViewModel>
+@using AdventureWork.WebMVC.Extension
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script src="~/Scripts/Customscript.js"></script>
+<script src="~/Scripts/IndexPageScript.js"></script>
+
+
+@{
+    ViewBag.Title = "Search";
+}
+
+
+
+<div class="result">
+     @if (Model.Count()==0)
+    {
+        <div class="polaroid">
+            <span class="lead glyphicon glyphicon-remove-circle" aria-hidden="true"> No Data Found, Please Try another keyword</span>
+        </div>
+    }
+    else{
+<table class="table table-bordered table-striped table-hover" id="product-table">
+    <thead>
+    <tr class="table-header table-header-fixed">
+        <th aria-label="Right Align"> Name <button id="sort-Table" class="GyfoBtn GyfoBtn-default GyfoBtn-right">
+            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button></th>
+        <th>Selected</th>
+    </tr>
+        </thead>
+    <tbody>
+    @foreach (AdventureWork.WebMVC.ViewModel.HomePageViewModel item in Model)
+    {
+         if (item.selected)
+        {
+            <tr class="text-muted">
+             <td>@item.productName</td>
+             <td class="text-center">
+               
+                @Html.PlusCheckBox("selected", item.selected,item.productId)
+             </td>
+             
+         </tr> 
+        }
+        else
+        {
+                
+        
+         <tr>
+             <td>@item.productName</td>
+             <td class="text-center">
+                @* <button  type="button" class="GyfoBtn GyfoBtn-default"  aria-label="Left Align"> <span class="glyphicon glyphicon-plus"  aria-hidden="true"></span> </button>*@
+                @Html.PlusCheckBox("selected", item.selected,item.productId)
+             </td>
+             
+         </tr>
+        } 
+        
+    }
+        </tbody>
+   </table>
+    }
+    </div>
+
+@*@Scripts.Render("~/Scripts/IndexPageScript.js")
+@Scripts.Render("~/Scripts/Customscript.js")*@
+

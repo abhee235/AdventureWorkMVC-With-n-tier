@@ -1,0 +1,36 @@
+﻿@model IEnumerable<AdventureWork.WebMVC.ViewModel.HomePageThumbnailPhoto>
+
+ <div class="bs-docs-featurette">
+      <div class="container"> 
+          <h1 class="bs-docs-featurette-title">We understand your need.</h1>
+          <p class="lead">  If you want the rush of going downhill at thirty miles an hour on two wheels with wind blowing dirt
+               in your eyes and mud flinging all over you, then mountain biking is for you. However it isn’t for the faint of heart.
+               When you fall, you fall hard, and if you ride hard, you go through parts like a runner goes through water. So let’s take a walk through a day at the course.</p>
+           <h2 class="bs-docs-featurette-title">Get your mountainian bike and travel the world from today.</h2>
+           <hr class="half-rule"/>
+          </div>
+     </div>
+<div class="container loadImageBackground">
+
+    <div class="row">
+        @foreach (var photo in Model)
+        {
+            <div class="col-xs-6 col-md-4">
+               
+                <a href="#" class="thumbnail">
+                    <img src="data:image/gif;base64,@System.Convert.ToBase64String(@photo.Photo)" alt="@photo.PhotoName" />
+                </a>
+                <div class="caption">
+                    <h4>@photo.PhotoName</h4>
+                    <p>@photo.Description</p>
+                </div>
+                </div>
+            
+             }
+        
+    </div>
+   
+</div>
+&nbsp&nbsp
+ <hr class="half-rule"/>
+ 

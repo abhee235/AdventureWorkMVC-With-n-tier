@@ -1,0 +1,29 @@
+﻿@model IEnumerable<AdventureWork.WebMVC.ViewModel.HomePageViewModel>
+@using AdventureWork.WebMVC.Extension
+<script src="~/Scripts/Scroll.js"></script>
+<script src="~/Scripts/Bookmark.js"></script>
+
+<h2>Bookmark</h2>
+&nbsp
+<div class="result" id="bookmark">
+<table class="table table-bordered table-striped table-hover" id="product-table">
+    <thead>
+    <tr class="table-header table-header-fixed">
+        <th aria-label="Right Align"> Name <button id="sort-Table" class="GyfoBtn GyfoBtn-default GyfoBtn-right">
+            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button></th>
+        <th>Selected</th>
+    </tr>
+        </thead>
+    <tbody>
+    @foreach (AdventureWork.WebMVC.ViewModel.HomePageViewModel item in Model)
+    {
+         <tr>
+             <td>@item.productName</td>
+             <td class="text-center">@Html.MinusCheckBox("selected",item.productId)</td>
+             
+         </tr>
+        
+    }
+  </tbody>
+</table>
+    </div>

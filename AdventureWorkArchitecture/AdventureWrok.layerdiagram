@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b1418ffd-35a0-4753-b777-a1562f2afd8d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="d176d4bf-bbd7-48a9-a219-3a77d8ad8b08" name="AdventureWork.Data.Context">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="35ec34c9-ba8d-4377-8594-d29fd7ceaa39" direction="Forward">
+          <layerMoniker Id="85a8adcc-4494-4cc7-9841-bb7631d95ce3" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="5f0feca1-12e1-4f01-99b8-15771b45d5fd" name="AdventureWork.Data.Context">
+          <ArtifactNode Label="AdventureWork.Data.Context" Category="CodeSchema_Project" Id="(Assembly=../AdventureWork.Data.Context/AdventureWork.Data.Context.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=AdventureWork.Data.Context)" Label="AdventureWork.Data.Context.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="3bf45388-080a-407c-a4ee-a68438eab6f0" name="AdventureWork.Data.Infrastructure">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="3394f9c6-815b-4a74-80c6-670a24c0d037" direction="Forward">
+          <layerMoniker Id="85a8adcc-4494-4cc7-9841-bb7631d95ce3" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="5fd25e51-21f7-459e-a691-41b9d8437062" direction="Forward">
+          <layerMoniker Id="d176d4bf-bbd7-48a9-a219-3a77d8ad8b08" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="e40d77c7-81e4-46f7-9384-4e36330d7928" name="AdventureWork.Data.Infrastructure">
+          <ArtifactNode Label="AdventureWork.Data.Infrastructure" Category="CodeSchema_Project" Id="(Assembly=../AdventureWork.Data.Infrastructure/AdventureWork.Data.Infrastructure.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=AdventureWork.Data.Infrastructure)" Label="AdventureWork.Data.Infrastructure.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="31fc5755-16d6-4f0b-b9db-da07951b883e" name="AdventureWork.WebMVC">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="5825e24f-b4e7-4220-8d02-e87b104a7a13" direction="Forward">
+          <layerMoniker Id="3bf45388-080a-407c-a4ee-a68438eab6f0" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="502f3093-4143-44d2-b462-ebb90ffe2aea" direction="Forward">
+          <layerMoniker Id="85a8adcc-4494-4cc7-9841-bb7631d95ce3" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="87c4338d-af73-4ab8-9e74-4e0867006bed" name="AdventureWork.WebMVC">
+          <ArtifactNode Label="AdventureWork.WebMVC" Category="CodeSchema_Project" Id="(Assembly=../AdventureWork.WebMVC/AdventureWork.WebMVC.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=AdventureWork.WebMVC)" Label="AdventureWork.WebMVC.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="85a8adcc-4494-4cc7-9841-bb7631d95ce3" name="AdventureWork.Domain">
+      <references>
+        <reference Id="69d8d2bf-a6a9-4c72-a53d-756a2c08068e" name="AdventureWork.Domain">
+          <ArtifactNode Label="AdventureWork.Domain" Category="CodeSchema_Project" Id="(Assembly=../AdventureWork.Domain/AdventureWork.Domain.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=AdventureWork.Domain)" Label="AdventureWork.Domain.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

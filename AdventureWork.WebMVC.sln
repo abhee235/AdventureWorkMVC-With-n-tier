@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWork.WebMVC", "AdventureWork.WebMVC\AdventureWork.WebMVC.csproj", "{C85E2CF7-98FD-4453-A83F-7C7103F9F408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWork.WebMVC.Tests", "AdventureWork.WebMVC.Tests\AdventureWork.WebMVC.Tests.csproj", "{3295DE08-F7F0-4B98-8F5A-BD9F102F952B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{E3DA3668-D0AA-493E-9CD3-1065B9662F22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWork.Data.Context", "AdventureWork.Data.Context\AdventureWork.Data.Context.csproj", "{BFCF6488-EFFB-4B28-B7A9-DA3ECBD038B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWork.Data.Infrastructure", "AdventureWork.Data.Infrastructure\AdventureWork.Data.Infrastructure.csproj", "{E26FA996-506F-43A8-8A38-1F7CA165658F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{BA5C221A-F557-496C-8FF5-E7B916701AB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{98D5E910-0A62-419E-BEB9-4751657132CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{DE8A3BBF-AC64-4285-B962-5EAB168C557D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWork.Domain", "AdventureWork.Domain\AdventureWork.Domain.csproj", "{B9D252E4-7E03-4D9A-B00C-52127A539A57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWork.IntegrationTest", "AdventureWork.IntegrationTest\AdventureWork.IntegrationTest.csproj", "{50795BBF-AAFB-4D8A-9027-E63C80B4D7C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Report", "Report", "{CC717DDA-4756-4D8E-8585-F989E257FCDA}"
+	ProjectSection(SolutionItems) = preProject
+		AdventureWorks_dependencygraphAndArchitecture.dgml = AdventureWorks_dependencygraphAndArchitecture.dgml
+		AdwentureWork_CodeMetrics.xlsx = AdwentureWork_CodeMetrics.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Performance Report", "Performance Report", "{053E0B4A-0A7A-4EE2-B36D-183E4F3B3476}"
+	ProjectSection(SolutionItems) = preProject
+		PerfilePerformance_AdventureWork.png = PerfilePerformance_AdventureWork.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C85E2CF7-98FD-4453-A83F-7C7103F9F408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C85E2CF7-98FD-4453-A83F-7C7103F9F408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C85E2CF7-98FD-4453-A83F-7C7103F9F408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C85E2CF7-98FD-4453-A83F-7C7103F9F408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3295DE08-F7F0-4B98-8F5A-BD9F102F952B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3295DE08-F7F0-4B98-8F5A-BD9F102F952B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3295DE08-F7F0-4B98-8F5A-BD9F102F952B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3295DE08-F7F0-4B98-8F5A-BD9F102F952B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFCF6488-EFFB-4B28-B7A9-DA3ECBD038B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCF6488-EFFB-4B28-B7A9-DA3ECBD038B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCF6488-EFFB-4B28-B7A9-DA3ECBD038B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCF6488-EFFB-4B28-B7A9-DA3ECBD038B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E26FA996-506F-43A8-8A38-1F7CA165658F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E26FA996-506F-43A8-8A38-1F7CA165658F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E26FA996-506F-43A8-8A38-1F7CA165658F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E26FA996-506F-43A8-8A38-1F7CA165658F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D252E4-7E03-4D9A-B00C-52127A539A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D252E4-7E03-4D9A-B00C-52127A539A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D252E4-7E03-4D9A-B00C-52127A539A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D252E4-7E03-4D9A-B00C-52127A539A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50795BBF-AAFB-4D8A-9027-E63C80B4D7C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50795BBF-AAFB-4D8A-9027-E63C80B4D7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50795BBF-AAFB-4D8A-9027-E63C80B4D7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50795BBF-AAFB-4D8A-9027-E63C80B4D7C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C85E2CF7-98FD-4453-A83F-7C7103F9F408} = {98D5E910-0A62-419E-BEB9-4751657132CD}
+		{3295DE08-F7F0-4B98-8F5A-BD9F102F952B} = {DE8A3BBF-AC64-4285-B962-5EAB168C557D}
+		{50795BBF-AAFB-4D8A-9027-E63C80B4D7C5} = {DE8A3BBF-AC64-4285-B962-5EAB168C557D}
+		{BFCF6488-EFFB-4B28-B7A9-DA3ECBD038B1} = {E3DA3668-D0AA-493E-9CD3-1065B9662F22}
+		{E26FA996-506F-43A8-8A38-1F7CA165658F} = {E3DA3668-D0AA-493E-9CD3-1065B9662F22}
+		{B9D252E4-7E03-4D9A-B00C-52127A539A57} = {BA5C221A-F557-496C-8FF5-E7B916701AB5}
+		{053E0B4A-0A7A-4EE2-B36D-183E4F3B3476} = {CC717DDA-4756-4D8E-8585-F989E257FCDA}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

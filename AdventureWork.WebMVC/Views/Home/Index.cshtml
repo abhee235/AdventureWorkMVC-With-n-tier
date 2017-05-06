@@ -1,0 +1,57 @@
+﻿@model IEnumerable<AdventureWork.WebMVC.ViewModel.HomePageViewModel>
+@using AdventureWork.WebMVC.Extension
+@{
+    ViewBag.Title = "Index";
+}
+
+
+    <div class="search-box"><div class="form-group" id="textsearch">
+     <input type="text"  id="ssearchText" class="form-control"  placeholder="search for product here" />
+       
+        </div>
+        <button type="submit" class="btn btn-warning" id="searchbutton">Search</button>
+        
+    </div>
+
+
+<div class="result">
+<table class="table table-bordered table-striped table-hover" id="product-table">
+    <thead>
+    <tr class="table-header table-header-fixed">
+        <th aria-label="Right Align"> Name <button id="sort-Table" class="GyfoBtn GyfoBtn-default GyfoBtn-right"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button></th>
+        <th>Selected</th>
+    </tr>
+        </thead>
+    <tbody id="table-content">
+    @foreach (AdventureWork.WebMVC.ViewModel.HomePageViewModel item in Model)
+    {
+        
+        if (item.selected)
+        {
+            <tr class="text-muted">
+             <td>@item.productName</td>
+             <td class="text-center">
+               
+                @Html.PlusCheckBox("selected", item.selected,item.productId)
+             </td>
+             
+         </tr> 
+        }
+        else
+        {
+                
+        
+         <tr>
+             <td>@item.productName</td>
+             <td class="text-center">
+                @*<button  type="button" class="GyfoBtn GyfoBtn-default"  aria-label="Left Align"> <span class="glyphicon glyphicon-plus"  aria-hidden="true"></span> </button>*@
+                @Html.PlusCheckBox("selected", item.selected,item.productId)
+             </td>
+             
+         </tr>
+        }   
+    }
+        </tbody>
+   </table>
+</div>
+<script src="~/Scripts/IndexPageScript.js"></script>
